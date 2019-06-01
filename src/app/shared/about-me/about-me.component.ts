@@ -12,4 +12,11 @@ export class AboutMeComponent implements OnInit {
   ngOnInit() {
   }
 
+  resume() {
+    let link = document.createElement("a");
+    link.download = "Resume";
+    link.href = "assets/files/Resume.pdf";
+    link.click();
+  }
+
 }
